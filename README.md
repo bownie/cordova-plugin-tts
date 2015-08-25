@@ -22,16 +22,14 @@ And then add the plugin definition to the top-level config.xml file within the <
 
 ```javascript
 // basic usage
-TTS
-    .speak('hello, world!', function () {
+TTS.speak('hello, world!', function () {
         alert('success');
     }, function (reason) {
         alert(reason);
     });
 
 // or with more options
-TTS
-    .speak({
+TTS.speak({
         text: 'hello, world!',
         locale: 'en-GB',
         rate: 0.75
@@ -40,6 +38,17 @@ TTS
     }, function (reason) {
         alert(reason);
     });
+```
+
+If you want to cancel speech then just say nothing:
+```javascript
+// cancel usage
+TTS.speak('', function () {
+        alert('success');
+    }, function (reason) {
+        alert(reason);
+    });
+
 ```
 
 ## API Definitions
