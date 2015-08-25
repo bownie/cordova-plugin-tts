@@ -12,6 +12,12 @@ Android 4.0.3+ (API Level 15+)
 cordova plugin add com.wordsbaking.cordova.tts
 ```
 
+And then add the plugin definition to the top-level config.xml file within the <widget> element:
+
+```sh
+<plugin name="TTS" value="com.wordsbaking.cordova.tts"/>
+```
+
 ## Usage
 
 ```javascript
